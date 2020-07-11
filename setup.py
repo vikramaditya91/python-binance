@@ -28,7 +28,7 @@ setup(
     install_requires=[
         'requests', 'six', 'pyOpenSSL', 'service-identity', 'dateparser', 'urllib3', 'chardet', 'certifi',
         'cryptography', 
-        'aiohttp==3.6.2',
+        'aiohttp>3.5.0,<=3.7.0',
         'websockets'
     ],
     keywords='binance exchange rest api bitcoin ethereum btc eth neo',

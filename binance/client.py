@@ -2535,3 +2535,6 @@ class AsyncClient(BaseClient):
         }
         return await self._delete('userDataStream', False, data=params)
     stream_close.__doc__ = Client.stream_close.__doc__
+
+    async def close(self):
+        return await self.session.close()

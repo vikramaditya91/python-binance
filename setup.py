@@ -17,9 +17,9 @@ with codecs.open(
         raise RuntimeError('Unable to determine version.')
 
 setup(
-    name='python-binance-async',
+    name='python-binance-asyn',
     version=version,
-    packages=['binance'],
+    packages=['binance1'],
     description='Binance REST API python implementation',
     url='https://github.com/sammchardy/python-binance',
     author='Sam McHardy',
@@ -28,7 +28,7 @@ setup(
     install_requires=[
         'requests', 'six', 'pyOpenSSL', 'service-identity', 'dateparser', 'urllib3', 'chardet', 'certifi',
         'cryptography', 
-        'aiohttp>3.5.0,<=3.7.0',
+        'aiohttp==3.6.2',
         'websockets'
     ],
     keywords='binance exchange rest api bitcoin ethereum btc eth neo',
